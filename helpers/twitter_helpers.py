@@ -6,10 +6,10 @@ import sys
 sys.path.append("/usr/local/lib/python2.7/site-packages")
 import twitter
 
-api = twitter.Api(consumer_key='cHzqinkRAdscW84XEEnY4Mk6t',
-                  consumer_secret='qhdKkXHxGnd1WJAX9h9Wvlbt2dxe1kazJHhRr4fgJp9aeIeadA',
-                  access_token_key='320566423-tGM8i2XsXp3msRk989mdUlAG8ca4qHKE0wMjtko8',
-                  access_token_secret='M0LMMBQVtezLR7Tmtv8NiXg5uJUeGnSeVh2AhdyJcSk9n')
+api = twitter.Api(consumer_key='',
+                  consumer_secret='',
+                  access_token_key='',
+                  access_token_secret='')
 
 # This function accesses the reddit API
 # INPUT:

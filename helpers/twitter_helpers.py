@@ -38,12 +38,12 @@ def twitter_url_is_article(url):
     print('There was a RequestException exception while trying to get the URL:')
     print(e)
   parsed_url = urlparse(request_url)[1].split('.')
-  badDomains = ['twitter.com', 'youtu.be'] # complete domains that shouldn't be included (with extension)
-  badDomainWords = ['imgur', 'gfycat', 'youtube', 'vevo'] # words that should not exist in the domain (without extension)
+  bad_domains = ['twitter.com', 'youtu.be'] # complete domains that shouldn't be included (with extension)
+  bad_domain_words = ['imgur', 'gfycat', 'youtube', 'vevo', 'reddituploads', 'spotify'] # words that should not exist in the domain (without extension)
   if (
-         (parsed_url[-2] + '.' + parsed_url[-1] in badDomains) or # check if in bad domains
-         parsed_url[-2] in badDomainWords or # for one-part TLDs, e.g.: youtube.com
-         (len(parsed_url) > 2 and parsed_url[-3] in badDomainWords) # for two-part TLDs, e.g.: youtube.co.uk
+         (parsed_url[-2] + '.' + parsed_url[-1] in bad_domains) or # check if in bad domains
+         parsed_url[-2] in bad_domain_words or # for one-part TLDs, e.g.: youtube.com
+         (len(parsed_url) > 2 and parsed_url[-3] in bad_domain_words) # for two-part TLDs, e.g.: youtube.co.uk
      ):
     return False
 

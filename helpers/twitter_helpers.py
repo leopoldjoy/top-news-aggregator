@@ -12,6 +12,7 @@ api = twitter.Api(consumer_key='',
 # This function accesses the reddit API
 # INPUT:
 #  - limit: the maximum posts to return
+#  - keyword: the keyword to get the top tweets from
 #  - last_id: all returned results will be after this post's id (if specified)
 # RETURNS:
 #  - the JSON result of the API call
@@ -68,6 +69,7 @@ def twitter_url_is_article(url):
 # This function sifts through the API data and returns posts that are non-image sources
 # INPUT:
 #  - passed_last_id: all returned results will be after this post's id
+#  - keyword: the keyword to get the top tweets from
 # RETURNS:
 #  - the articles that are deemed to be non-image/Reddit sources
 #  - the last id of the last post that was returned by this API call
@@ -97,6 +99,8 @@ def get_hundred_tweets(passed_last_id, keyword):
     i += 1
 
 # This function calls get_hundred_tweets until all top posts have been examined (up to 1000)
+# INPUT:
+#  - keyword: the keyword to get the top tweets from
 # RETURNS:
 #  - all of the top articles
 def get_keyword_top(keyword):

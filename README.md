@@ -45,6 +45,8 @@ Inside of the project directory, simply run:
 
     pipenv run python top_news.py
 
+NOTE: be patient, depending on your system it could take some time for the aggregator to finish running.
+
 ---
 Thanks for checking this out.
 

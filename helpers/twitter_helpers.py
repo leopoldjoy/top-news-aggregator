@@ -2,8 +2,6 @@ import requests
 from urlparse import urlparse
 import json
 from collections import Counter
-import sys
-sys.path.append("/usr/local/lib/python2.7/site-packages")
 import twitter
 
 api = twitter.Api(consumer_key='',

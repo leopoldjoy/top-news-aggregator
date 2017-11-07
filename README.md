@@ -32,7 +32,7 @@ Lastly, install [`python-twitter`](https://github.com/bear/python-twitter) by ru
 
 ### 2) Update Twitter API Credentials
 
-If you haven't already, follow [these](https://python-twitter.readthedocs.io/en/latest/getting_started.html#create-your-app) instructions to create a Twitter app. After that, go to the [`top_news.py` file](https://github.com/leopoldjoy/top-news-aggregator/edit/master/top_news.py#L9) and update the API credentials:
+If you haven't already, follow [these](https://python-twitter.readthedocs.io/en/latest/getting_started.html#create-your-app) instructions to create a Twitter app. After that, go to [`helpers/twitter_helpers.py`](https://github.com/leopoldjoy/top-news-aggregator/blob/master/helpers/twitter_helpers.py#L7) and update the API credentials:
 
     api = twitter.Api(consumer_key=[consumer key],
                       consumer_secret=[consumer secret],
